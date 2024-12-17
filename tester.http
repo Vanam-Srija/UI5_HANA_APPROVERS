@@ -1,0 +1,32 @@
+POST http://localhost:4004/api/v1/chooseApprover
+Content-Type: application/json
+
+{
+    "totalPrice": 5000
+}
+
+### Test choosing an approver with total price of 12000
+POST http://localhost:4004/api/v1/chooseApprover
+Content-Type: application/json
+
+{
+    "totalPrice": 12000
+}
+
+### Test choosing approver for total price greater than 25000
+POST http://localhost:4004/api/v1/chooseApprover
+Content-Type: application/json
+
+{
+    "totalPrice": 26000
+}
+
+### Test choosing an approver with total price < 25000
+POST http://localhost:4004/api/v1/chooseApprover
+Content-Type: application/json
+
+{
+    "totalPrice": 55000
+}
+
+
